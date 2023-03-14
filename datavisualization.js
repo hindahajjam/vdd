@@ -3,8 +3,8 @@
 
 
 // our results data from flask python
-// const results_A = {{result.get('results_A')|tojson}};
-// const results_B = {{result.get('results_B')|tojson}};
+const results_A = {{result.get('results_A')|tojson}};
+const results_B = {{result.get('results_B')|tojson}};
 
 var ctx1 = document.getElementById('myChart1').getContext('2d');
 var myChart1 = new Chart(ctx1, {
@@ -57,7 +57,7 @@ var myChart1 = new Chart(ctx1, {
 // Create a Pie Chart in ChartJs
 
 // our results data from flask python
-// const data = {{result.get('deals')|tojson}}
+const data = {{result.get('deals')|tojson}}
 
 var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
